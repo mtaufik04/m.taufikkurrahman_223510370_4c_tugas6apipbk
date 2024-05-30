@@ -63,13 +63,11 @@ export default {
           : 'http://localhost:3000/articles';
         const method = form.id ? 'put' : 'post';
 
-        // Jangan menyertakan id di objek yang dikirimkan
         const { id, ...formDataWithoutId } = form;
 
         const response = await axios[method](url, formDataWithoutId);
 
         if (response.status === 201 || response.status === 200) {
-          // Reload articles after saving
           load();
           resetForm();
         }
@@ -158,7 +156,7 @@ export default {
   width: calc(50% - 20px);
   border-collapse: collapse;
   margin-bottom: 20px;
-  box-shadow: 50px 50px 50px 50px rgba(242, 4, 4, 0.2); /* Efek bayangan yang kuat */
+  box-shadow: 50px 50px 50px 50px rgba(242, 4, 4, 0.2); 
   border-radius: 10px;
 }
 
