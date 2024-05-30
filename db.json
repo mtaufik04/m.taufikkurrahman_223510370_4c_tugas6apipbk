@@ -1,14 +1,19 @@
 {
   "articles": [
     {
-      "id": "b9fa",
-      "title": "saaya berdiskusi",
-      "content": "34232dsdsdfsd"
+      "title": "rumah kita",
+      "content": "rumah kita adalah rumah yang terdiri ",
+      "id": "4452"
     },
     {
-      "id": "1eae",
-      "title": "sdsds",
-      "content": "234242"
+      "id": "d4c1",
+      "title": "hari kamis",
+      "content": "saya akan membuat diri lebih baik \n"
+    },
+    {
+      "id": "540f",
+      "title": "hari minggu",
+      "content": "menjadi hari semakin baik lagi"
     }
   ]
 }
