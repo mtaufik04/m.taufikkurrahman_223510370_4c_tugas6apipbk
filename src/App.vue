@@ -49,16 +49,13 @@ export default {
 
     async function load() {
       try {
-        const savedArticles = localStorage.getItem('articles');
-        if (savedArticles) {
-          articles.value = JSON.parse(savedArticles);
-        } else {
-          console.log('Tidak ada artikel yang tersimpan.');
-        }
+        const response = await axios.get('/db.json');
+        articles.value = response.data;
       } catch (error) {
         console.error('Error loading articles:', error);
       }
     }
+
     async function save() {
       try {
         const url = form.id
