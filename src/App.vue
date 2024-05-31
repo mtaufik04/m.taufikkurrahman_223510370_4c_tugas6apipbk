@@ -49,7 +49,7 @@ export default {
 
     async function load() {
       try {
-        const response = await axios.get('/db.json');
+        const response = await axios.get('http://localhost:3000/articles');
         articles.value = response.data;
       } catch (error) {
         console.error('Error loading articles:', error);
